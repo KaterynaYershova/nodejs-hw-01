@@ -15,6 +15,4 @@ export const generateContacts = async (count) => {
   console.log(`${count} new contacts have been added.`);
 };
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  generateContacts(5).catch((error) => console.error('Error:', error));
-}
+generateContacts(5).catch((error) => console.error('Error:', error));

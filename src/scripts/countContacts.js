@@ -5,6 +5,4 @@ export const countContacts = async () => {
   console.log(`Total contacts: ${contacts.length}`);
 };
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  countContacts();
-}
+countContacts();

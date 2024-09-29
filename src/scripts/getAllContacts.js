@@ -5,6 +5,4 @@ export const getAllContacts = async () => {
   console.log(contacts);
 };
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  getAllContacts();
-}
+getAllContacts();

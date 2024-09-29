@@ -7,6 +7,4 @@ export const removeLastContact = async () => {
   await writeContacts(contacts);
 };
 
-if (import.meta.url === `file://${process.argv[1]}`) {
-  removeLastContact();
-}
+removeLastContact();
